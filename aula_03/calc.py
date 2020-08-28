@@ -68,13 +68,22 @@ escolha = input('')
 
 ## poderia ser feito com 5 condições utilizando if, elif, else ...
 
+##opcoes = {
+#        '1':soma,
+#        '2':subtracao,
+#        '3':divisao,
+#        '4':multiplicacao,
+#        '5':sair
+#        }
+
 opcoes = {
-        '1':soma,
-        '2':subtracao,
-        '3':divisao,
-        '4':multiplicacao,
-        '5':sair
-        }
+    '1': lambda x,y: x+y,
+    '2': lambda x,y: x-y,
+    '3': lambda x,y: x/y,
+    '4': lambda x,y: x*y,
+    '5': exit
+
+}
 
 if escolha in opcoes.keys():
 #3: executar as operações de acordo com a escolha
